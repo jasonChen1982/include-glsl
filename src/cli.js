@@ -5,7 +5,7 @@ const pkg = require('../package.json');
 const yargs = require('yargs');
 const utils = require('./utils/utils');
 
-// utils.updateCheck();
+utils.updateCheck();
 
 yargs
 .commandDir('cmds')
