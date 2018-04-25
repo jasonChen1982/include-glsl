@@ -1,6 +1,6 @@
 {
   "name": "shader-studio-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "translate glsl to javascript",
   "main": "/src/cli.js",
   "bin": {
@@ -33,6 +33,8 @@
     "fs-extra": "^5.0.0",
     "glob": "^7.1.2",
     "inquirer": "^5.2.0",
+    "rollup": "^0.58.2",
+    "rollup-plugin-glsl": "^1.2.0",
     "update-notifier": "^2.4.0",
     "yargs": "^11.0.0"
   }
