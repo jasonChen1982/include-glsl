@@ -21,8 +21,8 @@ exports.builder = yargs => {
     })
     .option('glob', {
       alias: 'g',
-      describe: '具体监听哪些文件或目录',
-      default: '**/studio/',
+      describe: '具体监听哪些目录',
+      default: '**/studio/*',
     })
     .option('watch', {
       alias: 'w',

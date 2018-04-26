@@ -6,10 +6,17 @@ const rollup = require('rollup');
 const cwd = process.cwd();
 
 function getStudios(argv) {
-  const studios = glob.sync(argv.glob, {
-    ignore: 'node_modules/**',
+  const rootDir = path.join(cwd, argv.root);
+  const studios = [];
+  glob.sync(argv.glob, {
+    cwd: rootDir,
+  }).forEach(file => {
+    const studio = path.dirname(file);
+    if (studios.indexOf(studio) === -1) studios.push(studio);
   });
-  return studios;
+  return studios.map(std => {
+    return path.join(argv.root, std);
+  });
 }
 
 function complieGLSL(argv, studio) {
