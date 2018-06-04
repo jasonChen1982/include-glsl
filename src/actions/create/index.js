@@ -38,7 +38,7 @@ module.exports = function(argv, rename) {
     {
       name: 'name',
       type: 'input',
-      message: `${rename ? '重新' : ''}输入demo的名字，${chalk.yellow('例如: nosie-wave')}`,
+      message: `${rename ? '重新' : ''}输入demo的名字，${chalk.yellow('例如: noise-wave')}`,
       validate: function(input) {
         return !hasSpace.test(input);
       },
