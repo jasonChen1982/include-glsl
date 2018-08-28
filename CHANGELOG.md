@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/jasonChen1982/shader-studio-cli/compare/v1.0.4...v1.1.0) (2018-08-28)
+
+
+### Features
+
+* **tofu:** dependencies new tofu.js ([fd9987f](https://github.com/jasonChen1982/shader-studio-cli/commit/fd9987f))
+
+
+
 <a name="1.0.4"></a>
 ## [1.0.4](https://github.com/jasonChen1982/shader-studio-cli/compare/v1.0.3...v1.0.4) (2018-06-04)
 
