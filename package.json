@@ -32,9 +32,10 @@
     "ejs": "^2.5.8",
     "fs-extra": "^5.0.0",
     "glob": "^7.1.2",
+    "glslify": "^6.3.0",
     "inquirer": "^5.2.0",
     "rollup": "^0.58.2",
-    "rollup-plugin-glsl": "^1.2.0",
+    "rollup-plugin-glslify": "^1.0.5",
     "update-notifier": "^2.4.0",
     "yargs": "^11.0.0"
   }

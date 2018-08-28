@@ -1,7 +1,7 @@
 
 const glob = require('glob');
 const path = require('path');
-const glsl = require('rollup-plugin-glsl');
+const glslify = require('rollup-plugin-glslify');
 const rollup = require('rollup');
 const cwd = process.cwd();
 
@@ -26,9 +26,7 @@ function complieGLSL(argv, studio) {
   return rollup.rollup({
     input: entry,
     plugins: [
-      glsl({
-        include: 'demos/**/*.glsl',
-      }),
+      glslify(),
     ],
   }).then(bundle => {
     return bundle.write({
